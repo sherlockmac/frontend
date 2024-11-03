@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(235, 235, 235);
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 5px 5px #0000009d;
+    font-style: italic;
+    /* font-variant: small-caps; */
+}
+
+p {
+    line-height: 1.2;
+    letter-spacing: .75px;
+    text-align: left;
+    word-spacing: 0.75px;
+    color: blueviolet;
+    /* white-space: nowrap; */
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    /* visibility: hidden; */
+    /* display: none; */
+}
+
+#decor {
+    text-decoration: underline;
+}
