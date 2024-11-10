@@ -1,0 +1,63 @@
+h1, h2, p {
+    margin: 0;
+    font-size: inherit;
+}
+
+body {
+    margin: 0;
+    /* padding: 0 20px; */
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 255, 255, 0.8);
+    z-index: 9999;
+}
+
+#static {
+    position: static;
+    background-color: burlywood;
+    border: 1px solid black;
+    padding: 10px;  
+}
+
+#relative {
+    position: relative;
+    background-color: royalblue;
+    border: 1px solid black;
+    padding: 10px;
+    left: -10px;
+    z-index: 2;   
+}
+
+#new-relative {
+    position: relative;
+    background-color: rgba(0, 128, 0, 0.689);
+    border: 1px solid black;
+    padding: 10px;
+    top: -50px;
+    z-index: 3;  
+}
+
+#absolute {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: brown;
+    border: 1px solid black;    
+}
