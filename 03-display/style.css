@@ -38,10 +38,42 @@ section {
 
 #box_1 {
     background-color: red;
+    grid-column: span 2;
 }
 #box_2 {
     background-color: green;
 }
 #box_3 {
     background-color: blue;
+}
+
+#flex_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+@media (max-width: 420px) {
+    #flex_section {
+        flex-direction: column;
+    }
+    #box_1 {
+        flex: 2;
+    }
+    #box_2 {
+        flex: 5;
+    }
+}
+
+#grid_section {
+    display: grid;
+    column-gap: 2%;
+    row-gap: 10px;
+    grid-template-rows: 1fr 100px;
+    grid-template-columns: 2fr 1fr;
+    height: 300px;
+    /* justify-items: center;
+    align-items: center; */
 }
