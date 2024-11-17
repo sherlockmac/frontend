@@ -45,3 +45,29 @@ table {
 * {
     box-sizing: border-box;
 }
+
+body {
+    padding: 0 72px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+}
+
+#menu {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+button {
+    padding: 12px 20px;
+    border: 1px solid #030712;
+    border-radius: 100px;
+    background-color: transparent;
+}
