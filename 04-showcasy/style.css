@@ -47,6 +47,7 @@ table {
 }
 
 body {
+    font-family: "Inter Tight", sans-serif;
     padding: 0 72px;
     max-width: 1200px;
     margin: 0 auto;
@@ -66,6 +67,8 @@ header {
 }
 
 button {
+    font-family: inherit;
+    font-weight: 600;
     padding: 12px 20px;
     border: 1px solid #030712;
     border-radius: 100px;
