@@ -101,12 +101,43 @@ header {
     padding: 72px 0;
 }
 
-#content_1 {
+#heading {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-#content_1 h1 span {
+#heading h1 span {
     color:#9ca3af;
+}
+
+#cta {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: 212px auto 518px;
+}
+
+#cta button {
+    background-color: #030712;
+    color: white;
+    font-size: 22px;
+    height: 77px;
+    width: 212px;
+    padding: 24px 37px;
+    border: none;
+    white-space: nowrap;
+    flex: none;
+    justify-content: center;
+}
+
+#cta p {
+    font-size: 22px;
+    font-weight: 400;
+    height: 58px;
+    color: #374151;
+    grid-column: 3;
+    align-self: end;
+    justify-self: end;
+    letter-spacing: 1px;
+    line-height: 28px;
 }
