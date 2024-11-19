@@ -66,6 +66,12 @@ h1 {
     letter-spacing: -2px; 
 }
 
+h2 {
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: -1px; 
+}
+
 button {
     display: flex;
     align-items: center;
@@ -78,6 +84,7 @@ button {
     border: 1px solid #030712;
     border-radius: 100px;
     background-color: transparent;
+    cursor: pointer;
 }
 
 header {
@@ -97,7 +104,7 @@ header {
     height: 48px;
 }
 
-#hero {
+#hero, #works {
     padding: 72px 0;
 }
 
@@ -140,4 +147,12 @@ header {
     justify-self: end;
     letter-spacing: 1px;
     line-height: 28px;
+}
+
+#works header {
+    padding: 0;
+}
+
+#works button {
+    padding: 16px 20px;
 }
