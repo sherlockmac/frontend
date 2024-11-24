@@ -60,7 +60,7 @@ p {
     font-size: 28px;
 }
 
-h1 {
+h1, #cta-section h3 {
     font-weight: 700;
     font-size: 104px;
     letter-spacing: -2px; 
@@ -104,7 +104,7 @@ header {
     height: 48px;
 }
 
-#hero, #works, #about {
+#hero, #works, #about, #cta-section {
     padding: 72px 0;
 }
 
@@ -114,7 +114,7 @@ header {
     gap: 16px;
 }
 
-#heading h1 span {
+#heading h1 span, #cta-section h3 span {
     color:#9ca3af;
 }
 
@@ -253,4 +253,31 @@ header {
     display: flex;
     gap: 72px;
     justify-content: center;
+}
+
+#cta-section div:first-child {
+    margin-bottom: 72px;
+}
+
+#cta-section div:nth-child(2) ul {
+    display: flex;
+    gap: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+#cta-section div:nth-child(2) a {
+    color:#030712;
+}
+
+#cta-section h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+#cta-section h2, #cta-section h3 {
+    text-align: center;
 }
