@@ -104,7 +104,7 @@ header {
     height: 48px;
 }
 
-#hero, #works {
+#hero, #works, #about {
     padding: 72px 0;
 }
 
@@ -193,4 +193,55 @@ header {
 .card-details {
     display: flex;
     justify-content: space-between;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
+}
+
+#about h2 {
+    font-size: 72px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+#about p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.5;
+}
+
+#about_description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+#about #categories {
+    align-self: flex-end;
+    flex: none;
+    color: #6b7280;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 128px;
+}
+
+/* #about #categories ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+} */
+
+#about #categories li {
+    margin-bottom: 24px;
+}
+
+#about #categories li:last-child {
+    margin-bottom: 0;
 }
