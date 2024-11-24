@@ -245,3 +245,12 @@ header {
 #about #categories li:last-child {
     margin-bottom: 0;
 }
+
+#companies {
+    position: relative;
+    width: 1200px;
+    left: -72px;
+    display: flex;
+    gap: 72px;
+    justify-content: center;
+}
