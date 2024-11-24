@@ -1,0 +1,196 @@
+/* style reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Default elements */
+body {
+    font-family: "Inter Tight", sans-serif;
+    color: #030712;
+    padding: 0 72px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+p {
+    font-weight: 500;
+    font-size: 28px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 104px;
+    letter-spacing: -2px; 
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: -1px; 
+}
+
+button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 56px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 20px;
+    border: 1px solid #030712;
+    border-radius: 100px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+}
+
+#menu {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+#menu button {
+    height: 48px;
+}
+
+#hero, #works {
+    padding: 72px 0;
+}
+
+#heading {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#heading h1 span {
+    color:#9ca3af;
+}
+
+#cta {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: 212px auto 518px;
+}
+
+#cta button {
+    background-color: #030712;
+    color: white;
+    font-size: 22px;
+    height: 77px;
+    width: 212px;
+    padding: 24px 37px;
+    border: none;
+    white-space: nowrap;
+    flex: none;
+    justify-content: center;
+}
+
+#cta p {
+    font-size: 22px;
+    font-weight: 400;
+    height: 58px;
+    color: #374151;
+    grid-column: 3;
+    align-self: end;
+    justify-self: end;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+#works header {
+    padding: 0;
+}
+
+#works button {
+    padding: 16px 20px;
+}
+
+#works #cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+#works #cards img {
+    width: 100%;
+    height: 512px;
+    border-radius: 24px;
+    margin-bottom: 24px;
+}
+
+.card h3 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+}
+
+.card p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #374151;
+}
+
+.card button {
+    justify-content: center;
+    width: 80px;
+    padding: 16px 28px;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+}
