@@ -223,13 +223,20 @@ margin-top: 24px;
 {
 font-size: 22px;
 font-weight: 600;
+line-height: 28.6px;
 
 }
 
 .insight-details p
 {
 font-size: 18px;
+margin-top: 8px;
 font-weight: 400;
 color: #374151;
+word-spacing: 3px;
+justify-content: left;
+}
 
+#insights {
+   
 }
