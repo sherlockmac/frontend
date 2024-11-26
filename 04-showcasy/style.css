@@ -60,7 +60,7 @@ p {
     font-size: 28px;
 }
 
-h1 {
+h1, #cta-section h3 {
     font-weight: 700;
     font-size: 104px;
     letter-spacing: -2px; 
@@ -104,7 +104,7 @@ header {
     height: 48px;
 }
 
-#hero, #works {
+#hero, #works, #about, #cta-section {
     padding: 72px 0;
 }
 
@@ -114,7 +114,7 @@ header {
     gap: 16px;
 }
 
-#heading h1 span {
+#heading h1 span, #cta-section h3 span {
     color:#9ca3af;
 }
 
@@ -195,6 +195,7 @@ header {
     justify-content: space-between;
 }
 
+
 #insight-pic { 
     margin-top: 40px;
     display: flex;
@@ -204,45 +205,118 @@ header {
 }
 
 .insight img {
-border-radius: 24px;
-size: 330.67px 575px;
-padding: 0px;
-margin: 0px;
+    border-radius: 24px;
+    size: 330.67px 575px;
+    padding: 0px;
+    margin: 0px;
 
 }
 
-.insight-details
-{
-display: flex;
-flex-direction: column;
-gap: 8px;
-margin-top: 24px;
+.insight-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 24px;
 }
 
-.insight-details h3
-{
-font-size: 22px;
-font-weight: 600;
-line-height: 28.6px;
-
+.insight-details h3 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28.6px;
 }
 
-.insight-details p
-{
-font-size: 18px;
-margin-top: 8px;
-font-weight: 400;
-color: #374151;
-word-spacing: 3px;
-justify-content: left;
+.insight-details p {
+    font-size: 18px;
+    margin-top: 8px;
+    font-weight: 400;
+    color: #374151;
+    word-spacing: 3px;
+    justify-content: left;
 }
 
-#insights-main {
-
-
+#about {
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
 }
 
+#about h2 {
+    font-size: 72px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
 
-#insights {
+#about p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.5;
+}
 
+#about_description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+#about #categories {
+    align-self: flex-end;
+    flex: none;
+    color: #6b7280;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 128px;
+}
+
+/* #about #categories ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+} */
+
+#about #categories li {
+    margin-bottom: 24px;
+}
+
+#about #categories li:last-child {
+    margin-bottom: 0;
+}
+
+#companies {
+    position: relative;
+    width: 1200px;
+    left: -72px;
+    display: flex;
+    gap: 72px;
+    justify-content: center;
+}
+
+#cta-section div:first-child {
+    margin-bottom: 72px;
+}
+
+#cta-section div:nth-child(2) ul {
+    display: flex;
+    gap: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+#cta-section div:nth-child(2) a {
+    color:#030712;
+}
+
+#cta-section h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+#cta-section h2, #cta-section h3 {
+    text-align: center;
 }
