@@ -104,7 +104,7 @@ header {
     height: 48px;
 }
 
-#hero, #works, #about, #cta-section, #insights {
+#hero, #works, #about, #cta-section, #insights, #awards, #testimonials {
     padding: 72px 0;
 }
 
@@ -380,4 +380,59 @@ header {
     background-color: #F9FAFB;   
     border: none;      
     padding: 0;
+}
+
+#testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    align-items: center;
+}
+
+#testimonials #testimony {
+    font-size: 22px;
+    font-weight: 400;
+    width: 784px;
+    line-height: 130%;;
+    text-align: center;
+}
+
+#testimonials #clients {
+    display: flex;
+    gap: 64px;
+}
+
+#testimonials #clients .client {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 146px;
+    align-items: center;
+    text-align: center;
+}
+
+#testimonials #clients .client-transparent {
+    opacity: 0.4;
+}
+
+#testimonials #clients .client img {
+    width: 64px;
+    height: 64px;
+}
+
+#testimonials #clients .client h2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+#testimonials #clients .client p {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 150%;
+}
+
+#testimonials #clients .client span {
+    color: #6b7280;
 }
