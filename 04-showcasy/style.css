@@ -104,7 +104,7 @@ header {
     height: 48px;
 }
 
-#hero, #works, #about, #cta-section {
+#hero, #works, #about, #cta-section, #insights {
     padding: 72px 0;
 }
 
@@ -195,6 +195,9 @@ header {
     justify-content: space-between;
 }
 
+#insights header {
+    padding: 0;
+}
 
 #insight-pic { 
     margin-top: 40px;
@@ -230,8 +233,8 @@ header {
     margin-top: 8px;
     font-weight: 400;
     color: #374151;
-    word-spacing: 3px;
-    justify-content: left;
+    line-height: 150%;
+    text-align: left;
 }
 
 #about {
