@@ -195,6 +195,45 @@ header {
     justify-content: space-between;
 }
 
+
+#insight-pic { 
+    margin-top: 40px;
+    display: flex;
+    gap: 32px;
+    flex-direction: row;
+
+}
+
+.insight img {
+    border-radius: 24px;
+    size: 330.67px 575px;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.insight-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.insight-details h3 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28.6px;
+}
+
+.insight-details p {
+    font-size: 18px;
+    margin-top: 8px;
+    font-weight: 400;
+    color: #374151;
+    word-spacing: 3px;
+    justify-content: left;
+}
+
 #about {
     display: flex;
     flex-direction: row;
