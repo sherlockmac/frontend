@@ -477,6 +477,7 @@ header {
     border-color: #4B5563;
     border-width: 1px;
     width: 252px;
+    height: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -492,6 +493,15 @@ header {
 #black-footer #footer-showcasy #page-list{
     margin-top: 72px;
     color: #6b7280;
+    height: 165px;
+    display: flex;
+    flex-direction: row;
+}
+#black-footer #footer-showcasy #page-list-connect{
+    display: flex;
+    flex-direction: column;
+    height: 165px;
+    
 }
 
 #black-footer #footer-showcasy #page-list h2{
@@ -529,4 +539,17 @@ header {
     font-weight: 400;
     align-items: center;
     justify-content: center;
+    margin-top: 72px;
+}
+#black-footer #footer-showcasy #stay-connected {
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    gap: 16px;
+}
+
+#page-link-connect{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
