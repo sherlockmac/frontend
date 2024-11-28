@@ -23,22 +23,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-/* Variables */
-:root {
-    --neutral-0: #fff;
-    --neutral-10: #f9fafb;
-    --neutral-20: #e5e7eb;
-    --neutral-30: #d1d5db;
-    --neutral-40: #9ca3af;
-    --neutral-50: #6b7280;
-    --neutral-60: #4b5563;
-    --neutral-70: #374151;
-    --neutral-80: #1f2937;
-    --neutral-90: #111827;
-    --neutral-100: #030712;
-    --general-padding: 72px;
-}
-
 body {
 	line-height: 1;
 }
@@ -59,6 +43,22 @@ table {
 }
 * {
     box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --neutral-0: #fff;
+    --neutral-10: #f9fafb;
+    --neutral-20: #e5e7eb;
+    --neutral-30: #d1d5db;
+    --neutral-40: #9ca3af;
+    --neutral-50: #6b7280;
+    --neutral-60: #4b5563;
+    --neutral-70: #374151;
+    --neutral-80: #1f2937;
+    --neutral-90: #111827;
+    --neutral-100: #030712;
+    --general-padding: 72px;
 }
 
 /* Default elements */
