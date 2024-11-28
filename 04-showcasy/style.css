@@ -436,3 +436,120 @@ header {
 #testimonials #clients .client span {
     color: #6b7280;
 }
+
+#black-footer {
+    background-color: #030712;
+    width: 1200px;
+    height: 642px;
+    padding: 0;
+    margin: 0%;
+    display: flex;
+    margin-left: -65px;
+}
+#black-footer span {
+    color: #6b7280;
+}
+#black-footer #footer-showcasy h2 {
+    color: white;
+}
+
+#footer-showcasy {
+    position: relative;
+    padding-left: 72px;
+    padding-top: 72px;
+    padding-right: 72px;
+    padding-bottom: 48px;
+    border: #e5290c;
+    border-width: 1px;
+    align-items: center;
+    justify-content: center;
+}
+.white-p {
+    color: #E5E7EB;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28.6px;
+    padding-top: 8px;
+}
+.sharing-b {
+    color: #e5e7eb;
+    background-color: none;
+    border-color: #4B5563;
+    border-width: 1px;
+    width: 252px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#black-footer #footer-showcasy #share-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 64px;
+}
+#black-footer #footer-showcasy #page-list{
+    margin-top: 72px;
+    color: #6b7280;
+    height: 165px;
+    display: flex;
+    flex-direction: row;
+}
+#black-footer #footer-showcasy #page-list-connect{
+    display: flex;
+    flex-direction: column;
+    height: 165px;
+    
+}
+
+#black-footer #footer-showcasy #page-list h2{
+    color: #6b7280;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28.6px;
+}
+.final-links {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+    text-decoration: none;
+
+}
+#footer-links{
+    display: flex;
+    flex-direction: row;
+    gap: 91px;
+}
+#black-footer #footer-showcasy #final-text {
+    margin-top: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#black-footer #footer-showcasy #final-text h3 {
+    color: #4b5563;
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    margin-top: 72px;
+}
+#black-footer #footer-showcasy #stay-connected {
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    gap: 16px;
+}
+
+#page-link-connect{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
