@@ -1,4 +1,4 @@
-/* style reset */
+/* Style Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,11 +19,26 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+/* Variables */
+:root {
+    --neutral-0: #fff;
+    --neutral-10: #F9FAFB;
+    --neutral-20: #e5e7eb;
+    --neutral-30: #d1d5db;
+    --neutral-40: #9ca3af;
+    --neutral-50: #6b7280;
+    --neutral-60: #4b5563;
+    --neutral-70: #374151;
+    --neutral-80: #1f2937;
+    --neutral-90: #111827;
+    --neutral-100: #030712;
+    --general-padding: 72px;
+}
+
 body {
 	line-height: 1;
 }
@@ -50,7 +65,7 @@ table {
 body {
     font-family: "Inter Tight", sans-serif;
     color: #030712;
-    padding: 0 72px;
+    padding: 0 var(--general-padding);
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -105,7 +120,7 @@ header {
 }
 
 #hero, #works, #about, #cta-section, #insights, #awards, #testimonials {
-    padding: 72px 0;
+    padding: var(--general-padding) 0;
 }
 
 #heading {
@@ -141,7 +156,7 @@ header {
     font-size: 22px;
     font-weight: 400;
     height: 58px;
-    color: #374151;
+    color: var(--neutral-70);
     grid-column: 3;
     align-self: end;
     justify-self: end;
@@ -181,7 +196,7 @@ header {
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
-    color: #374151;
+    color: var(--neutral-70);
 }
 
 .card button {
@@ -234,7 +249,7 @@ header {
     font-size: 18px;
     margin-top: 8px;
     font-weight: 400;
-    color: #374151;
+    color: var(--neutral-70);
     line-height: 150%;
     text-align: left;
 }
@@ -242,11 +257,11 @@ header {
 #about {
     display: flex;
     flex-direction: row;
-    gap: 72px;
+    gap: var(--general-padding);
 }
 
 #about h2 {
-    font-size: 72px;
+    font-size: var(--general-padding);
     font-weight: 600;
     margin-bottom: 24px;
 }
@@ -254,7 +269,7 @@ header {
 #about p {
     font-size: 18px;
     font-weight: 400;
-    color: #374151;
+    color: var(--neutral-70);
     line-height: 1.5;
 }
 
@@ -293,14 +308,14 @@ header {
 #companies {
     position: relative;
     width: 1200px;
-    left: -72px;
+    left: -var(--general-padding);
     display: flex;
-    gap: 72px;
+    gap: var(--general-padding);
     justify-content: center;
 }
 
 #cta-section div:first-child {
-    margin-bottom: 72px;
+    margin-bottom: var(--general-padding);
 }
 
 #cta-section div:nth-child(2) ul {
@@ -366,7 +381,7 @@ header {
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    color: #374151;
+    color: var(--neutral-70);
     margin-top: 8px;
 }
 
@@ -455,9 +470,9 @@ footer #footer-showcasy h2 {
 
 #footer-showcasy {
     position: relative;
-    padding-left: 72px;
-    padding-top: 72px;
-    padding-right: 72px;
+    padding-left: var(--general-padding);
+    padding-top: var(--general-padding);
+    padding-right: var(--general-padding);
     padding-bottom: 48px;
     border: #e5290c;
     border-width: 1px;
@@ -491,7 +506,7 @@ footer #footer-showcasy #share-buttons {
     margin-top: 64px;
 }
 footer #footer-showcasy #page-list{
-    margin-top: 72px;
+    margin-top: var(--general-padding);
     color: #6b7280;
     height: 165px;
     display: flex;
@@ -526,7 +541,7 @@ footer #footer-showcasy #page-list h2{
     gap: 91px;
 }
 footer #footer-showcasy #final-text {
-    margin-top: 72px;
+    margin-top: var(--general-padding);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -539,7 +554,7 @@ footer #footer-showcasy #final-text h3 {
     font-weight: 400;
     align-items: center;
     justify-content: center;
-    margin-top: 72px;
+    margin-top: var(--general-padding);
 }
 footer #footer-showcasy #stay-connected {
     display: flex;
