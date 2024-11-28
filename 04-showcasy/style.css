@@ -437,19 +437,19 @@ header {
     color: #6b7280;
 }
 
-#black-footer {
+footer {
     background-color: #030712;
-    width: 1200px;
+    width: 100%;
     height: 642px;
-    padding: 0;
+    /* padding: 0;
     margin: 0%;
     display: flex;
-    margin-left: -65px;
+    margin-left: -65px; */
 }
-#black-footer span {
+footer span {
     color: #6b7280;
 }
-#black-footer #footer-showcasy h2 {
+footer #footer-showcasy h2 {
     color: white;
 }
 
@@ -484,27 +484,27 @@ header {
     justify-content: center;
 }
 
-#black-footer #footer-showcasy #share-buttons {
+footer #footer-showcasy #share-buttons {
     display: flex;
     flex-direction: row;
     gap: 16px;
     margin-top: 64px;
 }
-#black-footer #footer-showcasy #page-list{
+footer #footer-showcasy #page-list{
     margin-top: 72px;
     color: #6b7280;
     height: 165px;
     display: flex;
     flex-direction: row;
 }
-#black-footer #footer-showcasy #page-list-connect{
+footer #footer-showcasy #page-list-connect{
     display: flex;
     flex-direction: column;
     height: 165px;
     
 }
 
-#black-footer #footer-showcasy #page-list h2{
+footer #footer-showcasy #page-list h2{
     color: #6b7280;
     font-size: 22px;
     font-weight: 600;
@@ -525,7 +525,7 @@ header {
     flex-direction: row;
     gap: 91px;
 }
-#black-footer #footer-showcasy #final-text {
+footer #footer-showcasy #final-text {
     margin-top: 72px;
     display: flex;
     align-items: center;
@@ -533,7 +533,7 @@ header {
 }
 
 
-#black-footer #footer-showcasy #final-text h3 {
+footer #footer-showcasy #final-text h3 {
     color: #4b5563;
     font-size: 16px;
     font-weight: 400;
@@ -541,7 +541,7 @@ header {
     justify-content: center;
     margin-top: 72px;
 }
-#black-footer #footer-showcasy #stay-connected {
+footer #footer-showcasy #stay-connected {
     display: flex;
     flex-direction: column;
     align-items: self-end;
