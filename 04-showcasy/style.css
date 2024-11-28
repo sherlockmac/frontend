@@ -26,7 +26,7 @@ footer, header, hgroup, menu, nav, section {
 /* Variables */
 :root {
     --neutral-0: #fff;
-    --neutral-10: #F9FAFB;
+    --neutral-10: #f9fafb;
     --neutral-20: #e5e7eb;
     --neutral-30: #d1d5db;
     --neutral-40: #9ca3af;
@@ -64,7 +64,7 @@ table {
 /* Default elements */
 body {
     font-family: "Inter Tight", sans-serif;
-    color: #030712;
+    color: var(--neutral-100);
     padding: 0 var(--general-padding);
     max-width: 1200px;
     margin: 0 auto;
@@ -96,7 +96,7 @@ button {
     font-size: 16px;
     font-weight: 600;
     padding: 12px 20px;
-    border: 1px solid #030712;
+    border: 1px solid var(--neutral-100);
     border-radius: 100px;
     background-color: transparent;
     cursor: pointer;
@@ -130,7 +130,7 @@ header {
 }
 
 #heading h1 span, #cta-section h3 span {
-    color:#9ca3af;
+    color:var(--neutral-40);
 }
 
 #cta {
@@ -140,8 +140,8 @@ header {
 }
 
 #cta button {
-    background-color: #030712;
-    color: white;
+    background-color: var(--neutral-100);
+    color: var(--neutral-0);
     font-size: 22px;
     height: 77px;
     width: 212px;
@@ -283,7 +283,7 @@ header {
 #about #categories {
     align-self: flex-end;
     flex: none;
-    color: #6b7280;
+    color: var(--neutral-50);
     text-align: right;
     font-size: 16px;
     font-weight: 400;
@@ -328,7 +328,7 @@ header {
 }
 
 #cta-section div:nth-child(2) a {
-    color:#030712;
+    color:var(--neutral-100);
 }
 
 #cta-section h2 {
@@ -364,7 +364,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding-bottom: 24px;
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid var(--neutral-20);
 }
 
 #awards_items .item .text_wrapper {
@@ -392,7 +392,7 @@ header {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    background-color: #F9FAFB;   
+    background-color: var(--neutral-10);   
     border: none;      
     padding: 0;
 }
@@ -449,11 +449,11 @@ header {
 }
 
 #testimonials #clients .client span {
-    color: #6b7280;
+    color: var(--neutral-50);
 }
 
 footer {
-    background-color: #030712;
+    background-color: var(--neutral-100);
     width: 100%;
     height: 642px;
     /* padding: 0;
@@ -462,10 +462,10 @@ footer {
     margin-left: -65px; */
 }
 footer span {
-    color: #6b7280;
+    color: var(--neutral-50);
 }
 footer #footer-showcasy h2 {
-    color: white;
+    color: var(--neutral-0);
 }
 
 #footer-showcasy {
@@ -480,16 +480,16 @@ footer #footer-showcasy h2 {
     justify-content: center;
 }
 .white-p {
-    color: #E5E7EB;
+    color: var(--neutral-20);
     font-size: 22px;
     font-weight: 400;
     line-height: 28.6px;
     padding-top: 8px;
 }
 .sharing-b {
-    color: #e5e7eb;
+    color: var(--neutral-20);
     background-color: none;
-    border-color: #4B5563;
+    border-color: var(--neutral-60);
     border-width: 1px;
     width: 252px;
     height: 40px;
@@ -507,7 +507,7 @@ footer #footer-showcasy #share-buttons {
 }
 footer #footer-showcasy #page-list{
     margin-top: var(--general-padding);
-    color: #6b7280;
+    color: var(--neutral-50);
     height: 165px;
     display: flex;
     flex-direction: row;
@@ -520,7 +520,7 @@ footer #footer-showcasy #page-list-connect{
 }
 
 footer #footer-showcasy #page-list h2{
-    color: #6b7280;
+    color: var(--neutral-50);
     font-size: 22px;
     font-weight: 600;
     line-height: 28.6px;
@@ -528,7 +528,7 @@ footer #footer-showcasy #page-list h2{
 .final-links {
     font-size: 16px;
     font-weight: 500;
-    color: white;
+    color: var(--neutral-0);
     display: flex;
     flex-direction: row;
     margin-top: 32px;
@@ -549,7 +549,7 @@ footer #footer-showcasy #final-text {
 
 
 footer #footer-showcasy #final-text h3 {
-    color: #4b5563;
+    color: var(--neutral-60);
     font-size: 16px;
     font-weight: 400;
     align-items: center;
