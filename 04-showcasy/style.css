@@ -180,8 +180,13 @@ main {
     padding: 0;
 }
 
-#works button {
+#works header button {
+    display: flex;
     padding: 16px 20px;
+}
+
+button#mobile-works {
+    display: none;
 }
 
 #works #cards {
@@ -655,6 +660,13 @@ footer #copyright {
 @media (max-width: 425px) {
     #menu button:first-child, #works header button, #insights header button {
         display: none;
+    }
+
+    button#mobile-works {
+        display: flex;
+        width: 100%;
+        margin-top: 32px;
+        justify-content: center;
     }
 
     #cta button {
