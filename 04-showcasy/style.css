@@ -59,6 +59,8 @@ table {
     --neutral-90: #111827;
     --neutral-100: #030712;
     --general-padding: 72px;
+    --general-mobile-padding: 20px;
+    --top-bottom-mobile-padding: 40px;
 }
 
 /* Default elements */
@@ -192,6 +194,8 @@ main {
 #works #cards img {
     width: 100%;
     height: 512px;
+    object-fit: cover;
+    object-position: center top;
     border-radius: 24px;
     margin-bottom: 24px;
 }
@@ -588,4 +592,72 @@ footer #copyright {
     font-size: 16px;
     font-weight: 400;
     text-align: center;
+}
+
+@media (max-width: 1200px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+    header {
+        padding: var(--general-mobile-padding);
+    }
+    header, main, footer {
+        grid-column: 1;
+        width: 100vw;
+    }
+    main {
+        padding: 0 var(--general-mobile-padding);
+    }
+    
+    #hero, #works {
+        padding: var(--top-bottom-mobile-padding) 0;
+    }
+
+    #hero h1 {
+        font-size: 72px;
+    }
+
+    #cta {
+        margin-top: 24px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        row-gap: 32px;
+    }
+
+    #cta p {
+        grid-column: 1;
+        grid-row: 1;
+        height: auto;
+    }
+
+    #cta button {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #works header, #insights header {
+        width: 100%;
+    }
+    
+    #works h2, #insights h2 {
+        font-size: 32px;
+    }
+
+    #works #cards {
+        gap: 32px;
+    }
+
+    #works #cards img {
+        height: 260px;
+    }
+}
+
+@media (max-width: 425px) {
+    #menu button:first-child, #works header button, #insights header button {
+        display: none;
+    }
+
+    #cta button {
+        width: 100%;
+    }
 }
