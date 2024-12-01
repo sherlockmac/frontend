@@ -318,7 +318,7 @@ main {
 #companies {
     position: relative;
     width: 1200px;
-    left: -var(--general-padding);
+    left: calc(-1 * var(--general-padding));
     display: flex;
     gap: var(--general-padding);
     justify-content: center;
