@@ -612,9 +612,14 @@ footer #copyright {
     }
     main {
         padding: 0 var(--general-mobile-padding);
+        overflow-x: hidden;
     }
     
-    #hero, #works, #about {
+    footer {
+        overflow-x: hidden;
+    }
+    
+    #hero, #works, #about, #companies {
         padding: var(--top-bottom-mobile-padding) 0;
     }
 
@@ -686,6 +691,11 @@ footer #copyright {
 
     #about button {
         align-self: flex-start;
+    }
+
+    #companies {
+        left: 0;
+        justify-content: flex-start;
     }
 }
 
