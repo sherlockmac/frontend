@@ -614,7 +614,7 @@ footer #copyright {
         padding: 0 var(--general-mobile-padding);
     }
     
-    #hero, #works {
+    #hero, #works, #about {
         padding: var(--top-bottom-mobile-padding) 0;
     }
 
@@ -655,6 +655,38 @@ footer #copyright {
     #works #cards img {
         height: 260px;
     }
+
+    #about {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    #about h2 {
+        font-size: 56px;
+    }
+
+    #about_description button {
+        display: none;
+    }
+
+    #about #categories {
+        width: 100%;
+        align-self: normal;
+    }
+
+    #about #categories ul {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        justify-content: space-between;
+    }
+
+    #about #categories li {
+        margin-bottom: 0;
+    }
+
+    #about button {
+        align-self: flex-start;
+    }
 }
 
 @media (max-width: 425px) {
@@ -669,7 +701,30 @@ footer #copyright {
         justify-content: center;
     }
 
-    #cta button {
+    #cta button, #about button {
         width: 100%;
     }
+
+    #about #categories ul {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        row-gap: 24px;
+        justify-content: space-between;
+    }
+
+    #about #categories li:nth-child(1) {
+        text-align: left;
+    }
+
+    #about button {
+        justify-content: center;
+    }
+
+    /* #about #categories li:nth-child(odd) {
+        text-align: left;
+    }
+
+    #about #categories li:nth-child(even) {
+        text-align: right;
+    }     */
 }
