@@ -697,12 +697,19 @@ footer #copyright {
         left: 0;
         justify-content: flex-start;
     }
-
 }
 
 @media (max-width: 824px) {
     #testimonials #testimony {
         width: 100%;
+    }
+
+    #awards {
+        flex-direction: column;
+    }
+
+    #awards h2 {
+        width: auto;
     }
 }
 
