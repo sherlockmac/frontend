@@ -185,7 +185,7 @@ main {
     padding: 16px 20px;
 }
 
-button#mobile-works {
+.lower-button, #about-mobile-button {
     display: none;
 }
 
@@ -649,7 +649,7 @@ footer #copyright {
         width: 100%;
     }
     
-    #works h2, #insights h2 {
+    #works h2, #insights h2, #insights h2 {
         font-size: 32px;
     }
 
@@ -689,13 +689,23 @@ footer #copyright {
         margin-bottom: 0;
     }
 
-    #about button {
+    #about-mobile-button {
+        display: flex;
         align-self: flex-start;
     }
 
     #companies {
         left: 0;
         justify-content: flex-start;
+    }
+
+    #insight-pic {
+        flex-direction: column;
+    }
+
+    .insight img {
+        width: 100%;
+        object-fit: cover;
     }
 }
 
@@ -718,7 +728,7 @@ footer #copyright {
         display: none;
     }
 
-    button#mobile-works {
+    .lower-button {
         display: flex;
         width: 100%;
         margin-top: 32px;
