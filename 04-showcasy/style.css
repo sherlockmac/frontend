@@ -754,6 +754,10 @@ footer #copyright {
         justify-content: center;
     }
 
+    #cta-section h3 {
+        font-size: 58px;
+    }
+
     /* #about #categories li:nth-child(odd) {
         text-align: left;
     }
