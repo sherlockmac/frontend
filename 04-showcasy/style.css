@@ -498,15 +498,17 @@ footer section p {
 }
 
 #social-links {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, 252px);
+    grid-template-rows: auto;
+    justify-content: space-between;
     gap: 16px;
     margin-top: 64px;
     line-height: 40px;
 }
 
 #social-links button {
-    width: 252px;
+    width: auto;
     height: 40px;
     font-size: 16px;
     font-weight: 500;
@@ -540,7 +542,7 @@ footer section p {
 
 #input-wrapper {
     position: relative;
-    width: 100%;
+    width: 328px;
 }
 
 #input-wrapper svg {
@@ -550,7 +552,7 @@ footer section p {
 }
 
 #input-wrapper input {
-    width: 328px;
+    width: 100%;
     line-height: 24px;
     font-size: 16px;
     font-weight: 400;
@@ -573,6 +575,7 @@ footer section p {
 #footer-links {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 91px;
 }
 
@@ -592,9 +595,12 @@ footer section p {
 }
 
 footer #copyright {
+    display: flex;
+    gap: 4px;
     margin-top: var(--general-padding);
     color: var(--neutral-60);
     font-size: 16px;
+    line-height: 150%;
     font-weight: 400;
     text-align: center;
 }
@@ -617,6 +623,15 @@ footer #copyright {
     
     footer {
         overflow-x: hidden;
+    }
+
+    footer section {
+        width: 100%;
+        padding: 48px var(--general-mobile-padding);
+    }
+
+    #social-links {
+        grid-template-columns: repeat(4, 1fr);
     }
     
     #hero, #works, #about, #companies {
@@ -707,6 +722,10 @@ footer #copyright {
         width: 100%;
         object-fit: cover;
     }
+
+    #footer-links {
+        gap: 58px;
+    }
 }
 
 @media (max-width: 824px) {
@@ -721,6 +740,21 @@ footer #copyright {
     #awards h2 {
         width: auto;
     }
+
+    #social-links {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    #page-list-connect {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #footer-links {
+        gap: 88px;
+    }    
+    
 }
 
 @media (max-width: 425px) {
@@ -756,6 +790,17 @@ footer #copyright {
 
     #cta-section h3 {
         font-size: 58px;
+    }
+
+    #input-wrapper {
+        width: 100%;
+    }
+
+    footer #copyright {
+        flex-direction: column;
+        width: 196px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /* #about #categories li:nth-child(odd) {
