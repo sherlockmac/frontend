@@ -189,6 +189,7 @@ nav footer #page-list-connect {
 
 nav footer #nav-social-links {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -823,6 +824,16 @@ footer #copyright {
     #footer-links {
         gap: 58px;
     }
+
+    nav ul {
+        padding: 0 var(--general-mobile-padding);
+    }
+
+    nav footer #page-list-connect {
+        flex-direction: column;
+        gap: 48px;
+        padding: 0 var(--general-mobile-padding);
+    }
 }
 
 @media (max-width: 824px) {
@@ -850,7 +861,15 @@ footer #copyright {
 
     #footer-links {
         gap: 88px;
-    }    
+    }
+
+    nav ul h2 {
+        font-size: 56px;
+    }
+
+    nav ul a button {
+        display: none;
+    }
     
 }
 
