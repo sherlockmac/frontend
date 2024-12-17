@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&display=swap');
+
+:root {
+    --dark: #000;
+    --light: #fff;
+    --gray: #e5e5e5;
+    --gray-darker: #c6c6c6;
+    --primary: #14213d;
+    --secondary: #fca311;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 5em;
+    padding: 0 2em;
+    background-color: var(--gray);
+}
+
+header h1 {
+    font-size: 1.5em;
+    color: var(--primary);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 5em);
+    background-color: var(--gray-darker);
+}
+
+#card {
+    color: var(--primary);
+    background-color: var(--gray);
+    padding: 2em 3em;
+    border-radius: 1em;
+}
+
+h2 {
+    font-weight: 800;
+    line-height: 150%;
+    max-width: 30ch;
+}
+
+h3 {
+    text-align: right;
+    font-weight: 600;
+}
+
+#card-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lexend", sans-serif;
+    background-color: var(--secondary);
+    border: none;
+    cursor: pointer;
+}
+
+button:focus-visible {
+    outline-color: var(--primary);
+}
+
+#card-buttons button:first-child {
+    background-color: var(--gray-darker);
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+}
+
+#card-buttons button:last-child {
+    padding: 0.5em 2em;
+    border-radius: 0.5em;
+}
+
