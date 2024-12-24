@@ -43,12 +43,19 @@ section {
     background-color: var(--gray);
     padding: 2em 3em;
     border-radius: 1em;
+    width: 50ch;
+}
+
+#spinner-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
 }
 
 h2 {
     font-weight: 800;
     line-height: 150%;
-    max-width: 30ch;
 }
 
 h3 {
@@ -85,5 +92,12 @@ button:focus-visible {
 #card-buttons button:last-child {
     padding: 0.5em 2em;
     border-radius: 0.5em;
+}
+
+.disabled {
+    background-color: var(--gray-darker);
+    color: var(--gray); 
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
