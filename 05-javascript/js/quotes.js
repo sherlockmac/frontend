@@ -20,12 +20,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }        
     }
 
+    // Helper fucntion to set HTML content. This is just for demo purposes!
+    const setHTMLContent = (element, value) => {
+        element.innerHTML = value;
+    }
+
     newButton.addEventListener('click', () => {
-        quoteElement.innerHTML = '';
+        setHTMLContent(quoteElement, '');
         personElement.innerHTML = '';
         newButton.classList.add('disabled');
         newButton.innerHTML = "Loading Quote";
-        getQuote();
+        if(!state.loading) {
+            getQuote();
+        }
     })
 
     xButton.addEventListener('click', () => { 
@@ -38,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const getQuote = async () => {
         setLoading(true);
+        // Category can be changed. https://api-ninjas.com/api/quotes
         const url = 'https://api.api-ninjas.com/v1/quotes?category=knowledge';
 
         await fetch(url, {

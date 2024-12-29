@@ -98,6 +98,5 @@ button:focus-visible {
     background-color: var(--gray-darker);
     color: var(--gray); 
     cursor: not-allowed;
-    pointer-events: none;
 }
 
