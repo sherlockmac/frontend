@@ -9,6 +9,10 @@
     --secondary: #fca311;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -113,18 +117,20 @@ button:focus-visible {
     border-radius: .5rem;
     text-align: center;
     display: none;
+    cursor: pointer;
 }
 
 #image-container {
-    columns: 3 26vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 80vw;
-    column-gap: 1rem;
+    gap: 1rem;
     margin: 2rem auto;
 }
 
 #image-container img {
     width: 100%;
-    margin-top: 1rem;
+    height: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 2rem;
